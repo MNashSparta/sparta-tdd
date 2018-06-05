@@ -20,13 +20,13 @@ describe CalcEngine do
   end
 
   it 'should correctly multiply two numbers' do
-    expect(@calc.multiply(10,3)).to eq (30)
+    expect(@calc.multiply(10,3)).to eq (10*3)
     expect(@calc.multiply(-1,3)).to eq (-3)
     expect(@calc.multiply(-4,-3)).to eq (12)
   end
 
   it 'should correctly divide two numbers' do
-    expect(@calc.divide(6,3)).to eq (2)
+    expect(@calc.divide(5,2)).to eq (2.5)
     expect(@calc.divide(10,2)).to eq (5)
     expect(@calc.divide(6,-3)).to eq (-2)
   end
